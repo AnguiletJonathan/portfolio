@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="DOC/img/jj.jpg" />
+    <link href="https://bootswatch.com/5/slate/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Loisirs | ANGUILET</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px white;
+        }
+
+        .example-wrapper {
+            text-align: center;
+            /* Pour centrer le texte */
+            margin-bottom: 20px;
+            /* Espacement en dessous du texte */
+        }
+
+        h4 {
+            font-style: italic;
+        }
+
+        video,
+        img {
+            max-width: 50%;
+            /* Pour que les vidéos et images ne dépassent pas la moitié de la largeur du conteneur */
+            height: auto;
+            display: block;
+            /* Pour éviter les espaces autour des éléments */
+            margin: 10px auto;
+            /* Pour centrer les éléments et ajouter un espacement */
+        }
+
+        b {
+            display: block;
+            /* Pour que le texte en gras occupe toute la largeur et force un retour à la ligne */
+            margin-bottom: 10px;
+            /* Espacement en dessous du texte en gras */
+        }
+
+        .btn {
+            display: block;
+            /* Pour que le bouton occupe toute la largeur */
+            margin: 20px auto;
+            /* Pour centrer le bouton et ajouter un espacement */
+        }
+
+        .btn a {
+            color: white;
+            /* Couleur du texte du lien en blanc */
+            text-decoration: none;
+            /* Supprime le soulignement du lien */
+        }
+
+        footer {
+            margin-top: auto;
+            position: relative;
+            /* Pour éviter les problèmes avec les éléments positionnés de manière absolue dans le footer */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .video-container {
+            width: 100%;
+        }
+
+        .image-row,
+        .video-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .image-item,
+        .video-item {
+            flex: 1;
+            max-width: 50%;
+            box-sizing: border-box;
+        }
+
+        /* Ajustement des dimensions des vidéos */
+        .video-item video {
+            width: 100%;
+            /* Les vidéos prennent toute la largeur de leur conteneur */
+            height: auto;
+            /* Garde les proportions */
+            display: block;
+        }
+
+        /* Assurer la même hauteur pour les images et les vidéos */
+        .image-row,
+        .video-row {
+            align-items: stretch;
+            /* Etire les éléments pour qu'ils aient la même hauteur */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <li><img src="DOC/img/oim.jpg" width="80px" heigth="80px"></li>
+            <a class="navbar-brand">ANGUILET QUABEN Jonathan</a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="projet2.html">CONCEVOIR UN RÉSEAU INFORMATIQUE
+                                    (SAE3.CYBER03)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet3.html">PENTEST (SAE3.CYBER04)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet1.html">CTF (SAE5.CYBER03)</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certification.html">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savoir.html">Mes Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h4><i>Cette page est la partie loisir de mon site.<br>Ici il y'a moins de professionnalisme et plus de
+                    personnel.<br>Vous y découvrirez quelques-unes de mes passions en dehors de l'informatique.</i></h4>
+        </div>
+
+        <br>
+        <b>On commence avec ma première passion, un de mes tous premiers cadeaux de Noël. J'ai toujours adoré cet
+            instrument même si en grandissant j'y joue de moins en moins.</b>
+
+        <video loop autoplay width="50%" height="500px">
+            <source src="DOC/img/g2.mp4" type=video/mp4 />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+
+        <br>
+        <b>Ensuite, nous avons mon deuxième passe-temps favori. Je suis très passionné par la culture japonaise et ses
+            différentes œuvres, plus particulièrement l'univers des mangas. Un de mes rêves est de visiter ce beau pays
+            qu'est le Japon.</b>
+
+        <img src="DOC/img/m.jpg" width="500px" height="500px">
+
+        <br>
+        <b>Je suis également un amateur de jeux vidéos, bon j'y passe forcément beaucoup moins de temps depuis la
+            reprise des cours mais ça reste un divertissement que j'aime beaucoup.</b>
+
+        <img src="DOC/img/play.jpg" width="500px" height="500px">
+
+        <br>
+        <b>Nous arrivons à ma passion numéro 1. Que ce soit dans le fait de le pratiquer, de le regarder à la télévision
+            ou d'y jouer, le football me procure énormément de bien-être et je ne peux vraiment pas m'y passer.
+        </b>
+
+        <div class="video-container">
+            <div class="image-row">
+                <img src="DOC/img/foot2.png">
+                <img src="DOC/img/f2.png">
+            </div>
+            <img src="DOC/img/foot1.png" width="50%">
+            <div class="video-row">
+                <div class="video-item">
+                    <video loop autoplay>
+                        <source src="DOC/img/moi4.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video loop autoplay>
+                        <source src="DOC/img/f5.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg">
+            <a class="navbar-brand" href="#top">
+                Haut de page
+            </a>
+            &#8593;
+        </button>
+
+    </div>
+</body>
+<footer>
+    <p>© 2025 Jonathan ANGUILET </p>
+</footer>
+
+</html>

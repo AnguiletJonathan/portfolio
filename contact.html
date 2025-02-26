@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="DOC/img/jj.jpg" />
+    <link href="https://bootswatch.com/5/slate/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Contact | ANGUILET</title>
+    <style>
+        /* Style pour le conteneur principal */
+        .container {
+            width: 80%;
+            /* Largeur du conteneur */
+            margin: 20px auto;
+            /* Centrer le conteneur */
+            background-color: #708090;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px white;
+            animation: clignoter 2.5s infinite;
+        }
+
+        @keyframes clignoter {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                /* Ombre visible */
+            }
+
+            50% {
+                box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+                /* Ombre invisible */
+            }
+
+            100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                /* Ombre visible */
+            }
+        }
+
+
+        /* Style pour les autres divs à l'intérieur du conteneur */
+        .container div {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        /* Style pour les titres */
+        .container h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #333;
+        }
+
+        /* Style pour les listes ul */
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Style pour les éléments de liste li */
+        .container li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Style pour les liens a */
+        .container a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+
+        .texte-brillant {
+            color: black;
+            /* Couleur de texte noire */
+            text-shadow: 0 0 5px white;
+            /* Ombre de texte blanche */
+        }
+
+        footer {
+            margin-top: auto;
+            position: relative;
+            /* Pour éviter les problèmes avec les éléments positionnés de manière absolue dans le footer */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <li><img src="DOC/img/oim.jpg" width="80px" heigth="80px"></li>
+            <a class="navbar-brand">ANGUILET QUABEN Jonathan</a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="projet2.html">CONCEVOIR UN RÉSEAU INFORMATIQUE
+                                    (SAE3.CYBER03)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet3.html">PENTEST (SAE3.CYBER04)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet1.html">CTF (SAE5.CYBER03)</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certification.html">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savoir.html">Mes Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>INFORMATIONS PERSONNELLES</h1>
+        <br>
+        <div>
+            <ul>
+                <li><strong>Nom :</strong> ANGUILET QUABEN</li>
+                <li><strong>Prénom :</strong> Jonathan</li>
+                <li><strong>Âge :</strong> 22 ans</li>
+                <li><strong>Email :</strong> <a
+                        href="mailto:jonathan.anguilet.quaben@etu.univ-st-etienne.fr">jonathan.anguilet.quaben@etu.univ-st-etienne.fr</a>
+                </li>
+                <li><strong>Téléphone :</strong> 07 45 50 61 05</li>
+                <li><strong>Adresse :</strong> 15 Bis Rue Fontenille, 42300 ROANNE FRANCE</li>
+                <li><strong>Niveau d'études :</strong> BAC+3</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Curriculum Vitae</h2>
+            <p><a class="texte-brillant" href="DOC/CV_Jonathan_ANGUILET.pdf" download>Télécharger mon CV</a></p>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>© 2025 Jonathan ANGUILET </p>
+</footer>
+
+</html>

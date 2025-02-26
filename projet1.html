@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="DOC/img/jj.jpg" />
+    <link href="https://bootswatch.com/5/slate/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title> PROJETS | ANGUILET </title>
+    <style>
+        .container {
+            width: 80%;
+            /* Largeur du conteneur */
+            margin: 20px auto;
+            /* Centrer le conteneur */
+            background-color: ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px white;
+        }
+
+        .container h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .table-active {
+            text-align: center;
+        }
+
+        .pop {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            margin-top: auto;
+            position: relative;
+            /* Pour éviter les problèmes avec les éléments positionnés de manière absolue dans le footer */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            /* L'image ne dépassera jamais la largeur de son conteneur */
+            max-height: 100%;
+            /* L'image ne dépassera jamais la hauteur de son conteneur */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <li><img src="DOC/img/oim.jpg" width="80px" heigth="80px"></li>
+            <a class="navbar-brand">ANGUILET QUABEN Jonathan</a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="projet2.html">CONCEVOIR UN RÉSEAU INFORMATIQUE
+                                    (SAE3.CYBER03)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet3.html">PENTEST (SAE3.CYBER04)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet1.html">CTF (SAE5.CYBER03)</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certification.html">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savoir.html">Mes Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>CTF</h1>
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">CONTEXTE</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            C'était un projet réalisé en trinôme, qui consistait à mettre en place une infrastructure volontairement
+            vulnérable afin qu'elle se fasse attaquer sous forme de scénario respectivement par des Lycéens, BTS et des
+            BUT.<br>
+            L'infrastructure mise en place était la suivante:
+        </p>
+        <img src="DOC/img/infra_sae3.png" alt="Infrastructure SAE5.03">
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">L'ATTAQUE DES LYCÉENS</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Pour la mise en place du scénario des lycéens il a fallu utiliser le PC Lycéen ainsi que le serveur windows
+            2016 virtuel créé sur le vcenter de l'iut.
+            <br>
+            Le scénario des lycéens consistait à les sensibiliser à un type d'attaque informatique très courant et
+            auquel ils ont sûrement déjà été victime. Il s'agit du PHISHING.
+            <br>
+            Leur mission était donc d'identifier les erreurs de phishing dissimulées dans un mail et un site web
+            douteux.
+            <br>
+        </p>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">RÉALISATION</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Pour mettre en place cette activité, il a fallu dans un premier temps créer le mail de phishing:
+        </p>
+        <img src="DOC/img/phishing_sae3.png" alt="phishing SAE5.03">
+
+        <p>
+            <br>Après avoir créer le mail de phishing il fallait ensuite créer le faux site instagram, site vers lequel
+            renvoie le lien dans le mail.
+        </p>
+        <img src="DOC/img/inst.png" alt="instagram SAE5.03">
+
+        <p>
+            <br>J'ai également utilisé un script Js afin de faire apparaître un pop-up au bout de 30 secondes afin de
+            récolter les identifiants de connexion de ceux qui les rentreront.
+        </p>
+
+        <div class="pop">
+            <img class="pop" src="DOC/img/popup.png" alt="instagram SAE5.03">
+        </div>
+
+        <p>
+            <br>Après il ne restait plus qu'à créer un serveur web IIS sur la machine virtuelle windows server 2016 pour
+            héberger le site web, afin qu'il soit accessible à partir de n'importe quel poste de l'iut connecté au
+            réseau.
+        </p>
+        <img src="DOC/img/iis.png" alt="instagram SAE5.03">
+
+        <p>
+            <br>Le scénario a donc pu se mettre en place, et il ne restait plus qu'à guider et challenger ces lycéens,
+            pour qu'ils puissent passer un bon moment tout en apprenant !
+        </p>
+        <img src="DOC/img/sit.png" alt="instagram SAE5.03">
+        <br>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">COMPÉTENCES TRAVAILLÉES</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <strong>
+                        RT1 - Administrer les réseaux et l'internet
+                    </strong>
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        RT2 - Connecter les entreprises et les usagers
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Permettre aux collaborateurs de se connecter de manière sécurisée au SI
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        RT3 - Créer des outils et applications informatiques pour les R&T
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Mettre en place un environnement de travail collaboratif informatique
+                    <br>&nbsp;&nbsp;&nbsp;Participer à la formation des utilisateurs
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        CYBER1 - Administrer un système d'information sécurisé
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Mettre en oeuvre des outils avancés de sécurisation d'une infrastructure du
+                    réseau
+                    <br>&nbsp;&nbsp;&nbsp;Sécuriser les systèmes d'exploitation
+                    <br>&nbsp;&nbsp;&nbsp;Proposer une architecture sécurisée de système d'information pour une petite
+                    structure
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        CYBER2 - Surveiller un système d'information sécurisé
+                    </strong>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>© 2025 Jonathan ANGUILET </p>
+</footer>
+
+
+</html>

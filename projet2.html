@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="DOC/img/jj.jpg" />
+    <link href="https://bootswatch.com/5/slate/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title> PROJETS | ANGUILET </title>
+    <style>
+        .container {
+            width: 80%;
+            /* Largeur du conteneur */
+            margin: 20px auto;
+            /* Centrer le conteneur */
+            background-color: ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px white;
+        }
+
+        .container h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .table-active {
+            text-align: center;
+        }
+
+        .pop {
+            text-align: center;
+        }
+
+        .compte {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: auto;
+            position: relative;
+            /* Pour éviter les problèmes avec les éléments positionnés de manière absolue dans le footer */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            /* L'image ne dépassera jamais la largeur de son conteneur */
+            max-height: 100%;
+            /* L'image ne dépassera jamais la hauteur de son conteneur */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <li><img src="DOC/img/oim.jpg" width="80px" heigth="80px"></li>
+            <a class="navbar-brand">ANGUILET QUABEN Jonathan</a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="projet2.html">CONCEVOIR UN RÉSEAU INFORMATIQUE
+                                    (SAE3.CYBER03)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet3.html">PENTEST (SAE3.CYBER04)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="projet1.html">CTF (SAE5.CYBER03)</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certification.html">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savoir.html">Mes Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>CONCEVOIR UN RÉSEAU INFORMATIQUE</h1>
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">CONTEXTE</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Le but de ce projet était de concevoir et tester un nouveau réseau informatique permettant d'accéder à des
+            services et ressources d'entreprise. Pour le mener à bien, j'ai eu à ma disposition 3 machines virtuelles
+            sur le vCenter de l'IUT.
+            <br>Il a fallu mettre en place respectivement un Active Directory, un serveur DNS Primaire et secondaire,
+            sécuriser au maximum le réseau avec la mise en place d'un DNSSEC afin de signer les enregistrements de ma
+            zone directe.
+            <br>Il fallait aussi mettre en place du routage dynamique avec le protocole OSPFv2, un DHCP, une partie WEB
+            à héberger sur un de mes serveurs locaux et mettre en place du RDS.
+            <br>Enfin, une partie Wifi durant laquelle il fallait créer un SSID pour les membres de l'entreprise et un
+            autre pour les visiteurs.
+        </p>
+        <div class="pop">
+            <img src="DOC/img/1sae303.png" alt="Infrastructure SAE3.03">
+        </div>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">TOPOLOGIE RÉSEAU</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            La topologie pour le test du bon fonctionnement du routage dynamique et du DHCP.
+        </p>
+        <div class="pop">
+            <img src="DOC/img/topo303.png" alt="Infrastructure SAE3.03">
+        </div>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">COMPTE RENDU</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Si vous voulez en savoir plus en détail sur la réalisation de ce projet, les différents outils utilisés et
+            soucis rencontrés, n'hésitez pas à aller voir mon compte rendu complet de ce projet.
+        </p>
+        <div class="pop">
+        </div>
+        <div class="compte">
+            <h2><a class="texte-brillant" href="DOC/rendu303.pdf" target="_blank">MON COMPTE RENDU</a></h2>
+        </div>
+
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">COMPÉTENCES TRAVAILLÉES</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <strong>
+                        RT1 - Administrer les réseaux et l'internet
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Configurer et dépanner le routage dynamique dans un réseau
+                    <br>&nbsp;&nbsp;&nbsp;Déployer des postes clients et des solutions virtualisées adaptées à une
+                    situation donnée
+                    <br>&nbsp;&nbsp;&nbsp;Déployer des services réseaux avancés
+                    <br>&nbsp;&nbsp;&nbsp;Travailler en équipe pour développer ses compétences professionnelles
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        RT2 - Connecter les entreprises et les usagers
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Mettre en place un accès distant sécurisé
+                    <br>&nbsp;&nbsp;&nbsp;Capacité à questionner un cahier des charges R&T
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        RT3 - Créer des outils et applications informatiques pour les R&T
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Installer, administrer un système de gestion de données
+                    <br>&nbsp;&nbsp;&nbsp;Accéder à un ensemble de données depuis un site web
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        CYBER1 - Administrer un système d'information sécurisé
+                    </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Mettre en oeuvre les outils fondamentaux de sécurisation d'une infrastructure
+                    du réseau
+                    <br>&nbsp;&nbsp;&nbsp;Sécuriser les services
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+<footer>
+    <p>© 2025 Jonathan ANGUILET </p>
+</footer>
+
+</html>
