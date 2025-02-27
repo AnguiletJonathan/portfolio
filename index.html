@@ -70,6 +70,20 @@
                 /* Mettre en gras les en-têtes */
             }
         }
+
+        /* Ajout pour les bords arrondis */
+        .rounded-table {
+            border-radius: 10px;
+            /* Ajustez la valeur pour l'arrondi souhaité */
+            overflow: hidden;
+            /* Important pour que l'arrondi s'applique correctement */
+        }
+
+        .rounded-table th,
+        .rounded-table td {
+            border: none;
+            /* Supprimer les bordures internes par défaut */
+        }
     </style>
 </head>
 
@@ -125,7 +139,7 @@
             compétences en valeur.<br>J'espère que mon profil vous plaira.
         </p>
         <div class="table-responsive">
-            <table class="table">
+            <table class="table rounded-table">
                 <tbody>
                     <tr class="table-active">
                         <th scope="row">Email</th>
