@@ -69,6 +69,16 @@
             text-align: center;
             padding: 10px;
         }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -77,6 +87,10 @@
         <div class="container-fluid">
             <li><img src="DOC/img/oim.jpg" width="80px" heigth="80px"></li>
             <a class="navbar-brand">ANGUILET QUABEN Jonathan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
@@ -91,17 +105,10 @@
                             Projets
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="projet2.html">CONCEVOIR UN RÉSEAU INFORMATIQUE
-                                    (SAE3.CYBER03)</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="projet3.html">PENTEST (SAE3.CYBER04)</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="projet1.html">CTF (SAE5.CYBER03)</a>
-                            </li>
-
+                            <li><a class="dropdown-item" href="projet2.html">CONCEVOIR UN RÉSEAU INFORMATIQUE
+                                    (SAE3.CYBER03)</a></li>
+                            <li><a class="dropdown-item" href="projet3.html">PENTEST (SAE3.CYBER04)</a></li>
+                            <li><a class="dropdown-item" href="projet1.html">CTF (SAE5.CYBER03)</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -142,6 +149,9 @@
             <br>
             <img src="DOC\img\dut.jpg" alt="dut">
         </div>
+        <button class="btn btn-primary btn-lg">
+            <a href="#top"> &#8593; </a>
+        </button>
     </div>
 </body>
 <footer>
